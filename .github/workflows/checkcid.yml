@@ -14,8 +14,8 @@ jobs:
           node-version: 8
       # Install npm packages
       - name: Install packages
-        run: npm install
+        run: npm update
       - name: Build the app
-        run: npm run build
+        run: npm run-script build
       - run: npm install -g surge
       - run: surge ./build ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
