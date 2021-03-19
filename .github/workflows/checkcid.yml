@@ -4,9 +4,11 @@ on: [push]
 
 jobs:
   build:
+	
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
+	run: cd ./proj1/my-app
       - uses: actions/checkout@v1
       - name: Install surge and fire deployment
         uses: actions/setup-node@v1
