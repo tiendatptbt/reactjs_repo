@@ -8,7 +8,7 @@ jobs:
     name: Deploying to surge
     steps:
       - uses: actions/checkout@v1
-      	 run: cd /proj1/my-app
+      	 run: cd ./proj1/my-app
       - name: Install surge and fire deployment
         uses: actions/setup-node@v1
         with:
