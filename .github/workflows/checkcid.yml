@@ -7,8 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     name: Deploying to surge
     steps:
-      - run: cd /proj1/my-app
       - uses: actions/checkout@v1
+      	 run: cd /proj1/my-app
       - name: Install surge and fire deployment
         uses: actions/setup-node@v1
         with:
