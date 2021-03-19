@@ -12,9 +12,9 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 8
-      # Install npm packagess
+      # Install npm packages
       - name: Install packages
-        run: npm update
+        run: npm install
       - name: Build the app
         run: npm run build
       - run: npm install -g surge
