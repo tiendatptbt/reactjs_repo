@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    runs-on: window-latest
+    runs-on: windows-latest
     name: Deploying to surge
     steps:
       - uses: actions/checkout@v1
