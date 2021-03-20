@@ -24,7 +24,7 @@ jobs:
         env:
           CI: false  
       - name: scss
-        run: npm install style-loader css-loader --save-dev 
+        run: yarn add node-sass
       - name: Build React App
         run: npm run build
         env:
